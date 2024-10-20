@@ -1,1 +1,25 @@
+import rule1
+import rule2
+import random_fill
+import matrix_creation
 
+if name == "main":
+  rows = int(input("Введите количество строк: "))
+  columns = int(input("Введите количество столбцов: "))
+
+  matrix = matrix_creation.create_matrix(rows, columns)
+
+  rule = int(input("Введите правило заполнения (1, 2, или 3): "))
+
+  if rule == 1:
+    rule1.fill_matrix_rule1(matrix)
+  elif rule == 2:
+    rule2.fill_matrix_rule2(matrix)
+  elif rule == 3:
+    random_fill.fill_matrix_random(matrix)
+  else:
+    print("Неверное правило заполнения.")
+    exit()
+
+  for row in matrix:
+    print(row)
