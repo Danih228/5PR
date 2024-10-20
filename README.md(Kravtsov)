@@ -1,0 +1,12 @@
+def fill_matrix_random(matrix):
+  """Заполняет матрицу случайными значениями."""
+  rows = len(matrix)
+  columns = len(matrix[0])
+  for i in range(rows):
+    for j in range(columns):
+      matrix[i][j] = random.randint(0, 100)
+
+def print_matrix(matrix):
+  """Выводит матрицу на экран."""
+  for row in matrix:
+    print(row)
