@@ -1,0 +1,6 @@
+def fill_matrix_rule2(matrix):
+  rows = len(matrix)
+  columns = len(matrix[0])
+  for i in range(rows):
+    for j in range(columns):
+      matrix[i][j] = i * j
