@@ -1,0 +1,4 @@
+def create_matrix(rows, columns):
+  """size matrix"""
+  matrix = [[0 for _ in range(columns)] for _ in range(rows)]
+  return matrix
